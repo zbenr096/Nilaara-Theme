@@ -65,7 +65,7 @@
                   src="{{ block.settings.img_desktop | image_url: width: '1600', crop: 'center' }}" 
                   alt=" {{ block.settings.img_desktop.alt }}"
                   width="1600"
-                  height="{{ 1600 | divided_by: block.settings.img_desktop.aspect_ratio | round }}"
+                  height="{{ 1000 | divided_by: block.settings.img_desktop.aspect_ratio | round }}"
                   loading="{{ media_loading }}"
                   style="{{ media_desktop_height }}">
               </div>
