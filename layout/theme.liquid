@@ -58,4 +58,35 @@
   %}
 </body>
 </html>
+
+    document.addEventListener('DOMContentLoaded', function() {
+  // Mobile menu toggle
+  document.querySelectorAll('.navbar-toggler').forEach(button => {
+    button.addEventListener('click', () => {
+      document.querySelector('.navbar-nav').classList.toggle('active');
+    });
+  });
+
+  // Dropdown hover functionality
+  document.querySelectorAll('.nav-item.dropdown').forEach(item => {
+    item.addEventListener('mouseenter', () => {
+      if (window.innerWidth > 768) {
+        item.classList.add('hover');
+      }
+    });
     
+    item.addEventListener('mouseleave', () => {
+      if (window.innerWidth > 768) {
+        item.classList.remove('hover');
+      }
+    });
+
+    // Mobile click functionality
+    item.addEventListener('click', (e) => {
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        item.classList.toggle('active');
+      }
+    });
+  });
+});
