@@ -55,7 +55,7 @@
                   src="{{ block.settings.img_mobile | image_url: width: '800', crop: 'center' }}" 
                   alt=" {{ block.settings.img_mobile.alt }}"
                   width="800"
-                  height="{{ 500 | divided_by: block.settings.img_mobile.aspect_ratio | round }}"
+                  height="{{ 300 | divided_by: block.settings.img_mobile.aspect_ratio | round }}"
                   loading="{{ media_loading }}"
                   style="{{ media_mobile_height }}">
               </div>
