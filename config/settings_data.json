@@ -100,6 +100,11 @@
     "content_for_index": []
   },
   "platform_customizations": {
-    "custom_css": []
+    "custom_css": [
+      ".navbar {display: flex; justify-content: space-between; align-items: center; padding: 1rem; background-color: #6D4C41; /* Brown color */ color: white;}",
+      "/* ... (keep other existing styles the same) ... */.dropdown-menu {display: none; position: absolute; top: 100%; left: 0; background-color: #8D6E63; /* Darker brown */ list-style: none; padding: 0; margin: 0;}",
+      "/* Simple hover dropdown without animation */.nav-item:hover .dropdown-menu {display: block;}",
+      "/* Responsive styles */@media (max-width: 768px) {.navbar-nav {display: none; } .navbar-nav.active {display: flex; } .nav-item.active .dropdown-menu {display: block; background-color: #A1887F; /* Lighter brown for mobile */ }}"
+    ]
   }
 }
