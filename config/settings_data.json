@@ -101,10 +101,12 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".navbar {display: flex; justify-content: space-between; align-items: center; padding: 1rem; background-color: #6D4C41; /* Brown color */ color: white;}",
-      "/* ... (keep other existing styles the same) ... */.dropdown-menu {display: none; position: absolute; top: 100%; left: 0; background-color: #8D6E63; /* Darker brown */ list-style: none; padding: 0; margin: 0;}",
-      "/* Simple hover dropdown without animation */.nav-item:hover .dropdown-menu {display: block;}",
-      "/* Responsive styles */@media (max-width: 768px) {.navbar-nav {display: none; } .navbar-nav.active {display: flex; } .nav-item.active .dropdown-menu {display: block; background-color: #A1887F; /* Lighter brown for mobile */ }}"
+      ".navbar {display: flex; justify-content: space-between; align-items: center; padding: 1rem; background-color: #6D4C41; /* Brown navbar */ color: white;}",
+      "/* ... (other existing styles remain the same) ... */.dropdown-menu {display: none; position: absolute; top: 100%; left: 0; background-color: white; /* White dropdown */ list-style: none; padding: 0; margin: 0; border: 1px solid #ddd; /* Add subtle border */ box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Add subtle shadow */}",
+      ".dropdown-item {color: #333; /* Dark text for contrast */ padding: 0.5rem 1rem; text-decoration: none; display: block; transition: background-color 0.2s; /* Smooth background transition */}",
+      ".dropdown-item:hover {background-color: #f5f5f5; /* Light hover effect */}",
+      "/* Show dropdown menu on hover */.nav-item:hover .dropdown-menu {display: block;}",
+      "/* Responsive styles */@media (max-width: 768px) {.nav-item.active .dropdown-menu {display: block; background-color: white; /* Keep white for mobile */ } .dropdown-item {color: #333; /* Maintain contrast */ }}"
     ]
   }
 }
