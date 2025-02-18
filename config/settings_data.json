@@ -12,7 +12,7 @@
     "color_primary": "#bc0000",
     "color_secondary": "#455a64",
     "color_body_bg": "#ffffff",
-    "color_body_color": "#212529",
+    "color_body_color": "#000000",
     "container_max_width": 1350,
     "border_radius": 0.3,
     "logo": "shopify://shop_images/Nilaara_Logo_184b57c5-0620-47ca-9340-1da4acda6778.png",
@@ -98,5 +98,20 @@
     "product_card_img_carousel_dark": false,
     "cart_img_border": "img-thumbnail",
     "content_for_index": []
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ".navbar {display: flex; justify-content: space-between; align-items: center; padding: 1rem; background-color: #333; color: white;}",
+      ".navbar-brand {display: flex; align-items: center;}",
+      ".navbar-toggler {display: none; background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer;}",
+      ".navbar-nav {display: flex; list-style: none; margin: 0; padding: 0;}",
+      ".nav-item {position: relative;}",
+      ".nav-link {color: white; padding: 0.5rem 1rem; text-decoration: none;}",
+      ".dropdown-menu {display: none; position: absolute; top: 100%; left: 0; background-color: #444; list-style: none; padding: 0; margin: 0;}",
+      ".dropdown-item {color: white; padding: 0.5rem 1rem; text-decoration: none; display: block;}",
+      ".dropdown-item:hover {background-color: #555;}",
+      "/* Show dropdown menu on hover */.nav-item:hover .dropdown-menu {display: block;}",
+      "/* Responsive styles */@media (max-width: 768px) {.navbar-toggler {display: block; } .navbar-nav {display: none; flex-direction: column; width: 100%; } .navbar-nav.active {display: flex; } .nav-item {width: 100%; } .dropdown-menu {position: static; display: none; } .nav-item:hover .dropdown-menu {display: none; } .nav-item.active .dropdown-menu {display: block; }}"
+    ]
   }
 }
