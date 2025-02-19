@@ -33,17 +33,6 @@ class Navbar extends HTMLElement {
     })
   }
 
-  handleDropdownsBackdrop () {
-    this.querySelectorAll('#navbar-desktop .dropdown-toggle').forEach(dropdown => {
-      dropdown.addEventListener('hidden.bs.dropdown', () => {
-        if (!document.querySelector('#navbar-desktop .dropdown-toggle.show')) {
-          document.body.classList.remove('navbar-dropdown-open')
-        }
-      })
-      dropdown.addEventListener('show.bs.dropdown', () => {
-        document.body.classList.add('navbar-dropdown-open')
-      })
-    })
-  }
+  ha
 }
 customElements.define('navbar-wrapper', Navbar)
