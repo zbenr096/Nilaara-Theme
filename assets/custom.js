@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
         dropdownMenu.style.opacity = '0';
         setTimeout(() => {
           dropdownMenu.style.display = 'none';
-        }, 300); // Matches the CSS transition duration
+        }, 240); // Matches the CSS transition duration
       });
     }
   });
