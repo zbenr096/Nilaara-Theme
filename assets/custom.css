@@ -1,3 +1,23 @@
 /* 
   Add here your own custom css styles
 */
+
+/* Ensure dropdown menus are hidden by default */
+.dropdown-menu {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(-10%);
+}
+
+/* Display dropdown menus on hover with animation */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Ensure parent menu items are positioned correctly */
+.nav-item.dropdown {
+  position: relative;
+}
