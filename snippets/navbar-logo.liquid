@@ -2,7 +2,7 @@
   class="navbar-logo" 
   href="{{ routes.root_url }}">
   {% if block.settings.logo %}
-    {% assign logo_height_x2 = block.settings.logo_height | times: 2 %}
+    {% assign logo_height_x2 = block.settings.logo_height | times: 3 %}
     <img
       class="img-fluid navbar-logo-default"
       src="{{ block.settings.logo | image_url: height: logo_height_x2 }}" 
