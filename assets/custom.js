@@ -1,16 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
-  let navbar = document.querySelector(".navbar");
-  let lastScrollTop = 0;
+  const navbar = document.querySelector(".navbar");
+  const menuItems = document.querySelectorAll(".navbar .menu-item"); // Adjust the selector to match your theme's structure
 
-  window.addEventListener("scroll", function () {
-    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-    if (scrollTop > lastScrollTop) {
-      navbar.classList.remove("show"); // Hide on scroll down
-    } else {
-      navbar.classList.add("show"); // Show on scroll up
-    }
-
-    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Prevent negative values
+  menuItems.forEach(item => {
+    item.addEventListener("mouseenter", () => {
+      navbar.classList.add("show");
+    });
+    item.addEventListener("mouseleave", () => {
+      navbar.classList.remove("show");
+    });
   });
 });
