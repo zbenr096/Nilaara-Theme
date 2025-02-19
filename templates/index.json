@@ -47,7 +47,6 @@
         "slide_Q4UPQq",
         "slide_TddqxQ"
       ],
-      "disabled": true,
       "settings": {
         "bg_color": "bg-body",
         "bg_opacity": 100,
@@ -145,7 +144,6 @@
     },
     "richtext_AtYwxr": {
       "type": "richtext",
-      "disabled": true,
       "settings": {
         "bg_color": "bg-primary",
         "bg_opacity": 100,
@@ -660,7 +658,6 @@
     },
     "separator_pMbxtB": {
       "type": "separator",
-      "disabled": true,
       "settings": {
         "bg_color": "bg-secondary",
         "bg_opacity": 25,
@@ -673,6 +670,7 @@
     }
   },
   "order": [
+    "separator_pMbxtB",
     "hero_carousel_CmDneU",
     "featured_products_nXJKQn",
     "richtext_4miPYL",
@@ -683,7 +681,6 @@
     "card_slider_BFzjjF",
     "faq_7TT7z4",
     "testimonials_eFtnyC",
-    "blog_slider_UUweWT",
-    "separator_pMbxtB"
+    "blog_slider_UUweWT"
   ]
 }
