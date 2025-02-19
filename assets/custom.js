@@ -22,3 +22,19 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+let lastScrollTop = 0;
+const navbar = document.getElementById("navbar");
+
+window.addEventListener("scroll", function() {
+  let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (currentScroll > lastScrollTop) {
+    // Scrolling down - hide navbar
+    navbar.style.top = "-60px";  // Adjust based on your navbar height
+  } else {
+    // Scrolling up - show navbar
+    navbar.style.top = "0";
+  }
+  
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative scroll
+});
