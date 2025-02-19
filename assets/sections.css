@@ -6,13 +6,7 @@
 /*
   Header
 */
-#header-group {
-  transition: transform .4s ease-out;
-}
 
-#header-group.hide {
-  transform: translateY(-100%);
-}
 
 /* 
   Announcement bar
