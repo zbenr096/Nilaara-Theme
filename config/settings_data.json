@@ -101,13 +101,13 @@
   },
   "platform_customizations": {
     "custom_css": [
-      "/* Main navigation container */nav ul {list-style: none; padding: 0; margin: 0; background-color: #333;}",
-      "/* Navigation links */nav ul li {position: relative; display: inline-block;}",
-      "/* Top-level links styling */nav ul li a {display: block; padding: 15px 20px; color: white; text-decoration: none;}",
-      "/* Dropdown menu container */nav ul li ul {display: none; position: absolute; left: 0; top: 100%; background-color: #444; padding: 0; margin: 0; list-style: none; min-width: 200px; z-index: 1000;}",
-      "/* Dropdown links styling */nav ul li ul li a {padding: 10px 15px; color: white;}",
-      "/* Hover effect for dropdown */nav ul li:hover > ul {display: block; animation: slideDown 0.3s ease-in-out;}",
-      "/* Slide-down animation */@keyframes slideDown {from {opacity: 0; transform: translateY(-10%); } to {opacity: 1; transform: translateY(0); }}"
+      "/* Main navigation container */nav ul {list-style: none; padding: 0; margin: 0; background-color: white;}",
+      " /* Navigation links */nav ul li {position: relative; display: inline-block;}",
+      " /* Top-level links styling */nav ul li a {display: block; padding: 15px 20px; color: white; text-decoration: none;}",
+      " /* Dropdown menu container */nav ul li ul {display: none; position: absolute; left: 0; top: 100%; background-color: #444; padding: 0; margin: 0; list-style: none; min-width: 200px; z-index: 1000;}",
+      " /* Dropdown links styling */nav ul li ul li a {padding: 10px 15px; color: white;}",
+      " /* Hover effect for dropdown */nav ul li:hover > ul {display: block; animation: slideDown 0.3s ease-in-out;}",
+      " /* Slide-down animation */@keyframes slideDown {from {opacity: 0; transform: translateY(-10%); } to {opacity: 1; transform: translateY(0); }}"
     ]
   }
 }
