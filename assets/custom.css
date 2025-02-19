@@ -4,7 +4,7 @@
   opacity: 0;
   transform: translateY(-10px);
   transition: opacity 0.4s ease, transform 0.4s ease;
-  pointer-events: none; /* Disable clicks on the dropdown menu */
+  pointer-events: none; /* Disable clicks on the dropdown menu by default */
 }
 
 /* Display the dropdown menu and apply the slide-down effect on hover */
@@ -12,7 +12,12 @@
   display: block;
   opacity: 1;
   transform: translateY(0);
-  pointer-events: auto; /* Re-enable hover interactions */
+  pointer-events: auto; /* Re-enable hover interactions when dropdown is shown */
+}
+
+/* Disable pointer events when navbar is hidden */
+.navbar.hidden .dropdown-menu {
+  pointer-events: none; /* Disable interaction with dropdown when navbar is hidden */
 }
 
 /* Highlight submenu items on hover */
@@ -28,5 +33,3 @@
 .navbar .dropdown-toggle {
   pointer-events: none;
 }
-
-
