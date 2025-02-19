@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (menu) {
         menu.style.display = 'block';
         setTimeout(function () {
-          menu.style.opacity = '1';
+          menu.style.opacity = '0';
           menu.style.transform = 'translateY(0)';
         }, 10);
       }
