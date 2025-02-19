@@ -9,6 +9,18 @@
  */
 {
   "sections": {
+    "separator_pMbxtB": {
+      "type": "separator",
+      "settings": {
+        "bg_color": "bg-primary",
+        "bg_opacity": 100,
+        "height": 6,
+        "container": "container",
+        "container_max_width": "",
+        "pt": 0,
+        "pb": 0
+      }
+    },
     "hero_carousel_CmDneU": {
       "type": "hero-carousel",
       "blocks": {
@@ -87,7 +99,7 @@
         "text_color": "text-body",
         "border_top_width": 0,
         "border_bottom_width": 0,
-        "border_color": "border-primary",
+        "border_color": "border-white",
         "border_opacity": 100,
         "container_max_width": "",
         "products": [
@@ -257,18 +269,6 @@
         "breakpoint_desktop": 3,
         "pt": 11,
         "pb": 11
-      }
-    },
-    "separator_kfq8kz": {
-      "type": "separator",
-      "settings": {
-        "bg_color": "bg-primary",
-        "bg_opacity": 10,
-        "height": 1,
-        "container": "container",
-        "container_max_width": "",
-        "pt": 0,
-        "pb": 10
       }
     },
     "media_with_text_xTY8gi": {
@@ -655,18 +655,6 @@
         "pt": 10,
         "pb": 12
       }
-    },
-    "separator_pMbxtB": {
-      "type": "separator",
-      "settings": {
-        "bg_color": "bg-secondary",
-        "bg_opacity": 25,
-        "height": 1,
-        "container": "container",
-        "container_max_width": "",
-        "pt": 0,
-        "pb": 0
-      }
     }
   },
   "order": [
@@ -676,7 +664,6 @@
     "richtext_4miPYL",
     "richtext_AtYwxr",
     "featured_collections_n3Br7m",
-    "separator_kfq8kz",
     "media_with_text_xTY8gi",
     "card_slider_BFzjjF",
     "faq_7TT7z4",

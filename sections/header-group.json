@@ -55,8 +55,8 @@
         "text_color": "text-white",
         "border_top_width": 0,
         "border_bottom_width": 0,
-        "border_color": "border-primary",
-        "border_opacity": 100,
+        "border_color": "border-white",
+        "border_opacity": 0,
         "shadow": "shadow-sm"
       }
     }
