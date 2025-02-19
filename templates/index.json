@@ -47,6 +47,7 @@
         "slide_Q4UPQq",
         "slide_TddqxQ"
       ],
+      "disabled": true,
       "settings": {
         "bg_color": "bg-body",
         "bg_opacity": 100,
@@ -224,6 +225,7 @@
         "collection_fQ9QDf",
         "collection_kRQqkR"
       ],
+      "disabled": true,
       "settings": {
         "bg_color": "bg-body",
         "bg_opacity": 100,
@@ -261,7 +263,6 @@
     },
     "separator_kfq8kz": {
       "type": "separator",
-      "disabled": true,
       "settings": {
         "bg_color": "bg-primary",
         "bg_opacity": 10,
@@ -316,6 +317,7 @@
       "block_order": [
         "row_JkMDbM"
       ],
+      "disabled": true,
       "settings": {
         "container_max_width": ""
       }
@@ -386,6 +388,7 @@
         "item_iKKgHJ",
         "item_Je3xNm"
       ],
+      "disabled": true,
       "settings": {
         "bg_color": "bg-body",
         "bg_opacity": 100,
@@ -430,6 +433,13 @@
     "faq_7TT7z4": {
       "type": "faq",
       "blocks": {
+        "item_KKbWTC": {
+          "type": "item",
+          "settings": {
+            "title": "",
+            "description": ""
+          }
+        },
         "item_AgKJ3m": {
           "type": "item",
           "settings": {
@@ -474,6 +484,7 @@
         }
       },
       "block_order": [
+        "item_KKbWTC",
         "item_AgKJ3m",
         "item_EemRD3",
         "item_jyLYkB",
@@ -481,6 +492,7 @@
         "item_kWLWrb",
         "item_dizKmG"
       ],
+      "disabled": true,
       "settings": {
         "bg_color": "bg-body",
         "bg_opacity": 100,
@@ -566,6 +578,7 @@
         "item_BUkPE7",
         "item_DtBFNc"
       ],
+      "disabled": true,
       "settings": {
         "bg_color": "bg-primary",
         "bg_opacity": 5,
@@ -607,6 +620,7 @@
     },
     "blog_slider_UUweWT": {
       "type": "blog-slider",
+      "disabled": true,
       "settings": {
         "bg_color": "bg-body",
         "bg_opacity": 100,
