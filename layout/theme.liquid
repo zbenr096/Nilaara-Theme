@@ -1,55 +1,68 @@
 <!doctype html>
-<html 
-  lang="{{ request.locale.iso_code }}"
-  class="{% if request.design_mode %}design-mode{% endif %}">
+<html lang="{{ request.locale.iso_code }}" class="{% if request.design_mode %}design-mode{% endif %}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="{{ settings.color_primary }}">
-
   <link rel="canonical" href="{{ canonical_url }}">
   <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
   <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
-
   {%- unless settings.favicon == blank -%}
-      <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: '32', height: '32' }}">
+    <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: '32', height: '32' }}">
   {%- endunless -%}
-
   <title>
     {{ page_title }}
     {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
     {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
     {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
   </title>
-
   {% if page_description %}
     <meta name="description" content="{{ page_description | escape }}">
   {% endif %}
-
   {% render 'meta-tags' %}
-
   {{ content_for_header }}
-
   {% render 'styles-scripts' %}
+  <style>
+    /* Main Header Background */
+    #shopify-section-header {background-color:#3E2723!important}
+    /* Header Container */
+    .header {background:transparent!important;padding:1.5rem 2rem!important}
+    /* Logo Size */
+    .header__heading-link {width:200px!important}
+    .header__heading-logo {width:100%!important;height:auto!important}
+    /* Navigation Items */
+    .header__menu-item {color:#fff!important;padding:1rem 1.5rem!important;position:relative!important}
+    /* Dropdown Menu */
+    .header__submenu {background:#4E342E!important;border-radius:4px!important;opacity:0!important;visibility:hidden!important;transform:translateY(10px)!important;transition:all .3s ease!important;display:block!important}
+    /* Dropdown Animation */
+    .header__menu-item:hover .header__submenu {opacity:1!important;visibility:visible!important;transform:translateY(0)!important}
+    /* Dropdown Items */
+    .header__submenu-item .header__menu-item {opacity:0!important;transform:translateY(-10px)!important;transition:all .3s ease!important}
+    .header__menu-item:hover .header__submenu-item .header__menu-item {opacity:1!important;transform:translateY(0)!important}
+    /* Staggered Animation */
+    .header__submenu-item:nth-child(1) .header__menu-item {transition-delay:.1s!important}
+    .header__submenu-item:nth-child(2) .header__menu-item {transition-delay:.2s!important}
+    .header__submenu-item:nth-child(3) .header__menu-item {transition-delay:.3s!important}
+    /* Mobile Menu */
+    @media (max-width:768px){
+      .header__heading-link {width:160px!important}
+      .header__menu {background:#3E2723!important}
+      .header__submenu {transform:none!important;max-height:0!important;overflow:hidden!important;opacity:1!important;visibility:visible!important;transition:max-height .3s ease!important}
+      .header__menu-item:hover .header__submenu {max-height:500px!important}
+    }
+  </style>
 </head>
-
 <body class="{{ request.page_type | prepend: 'page-type-' }}">
-  <a class="visually-hidden-focusable" href="#main">
-    {{ 'general.accessibility.skip_content' | t }}
-  </a>
-  
+  <a class="visually-hidden-focusable" href="#main">{{ 'general.accessibility.skip_content' | t }}</a>
   <div id="header-group" class="sticky-top">
     {% sections 'header-group' %}
   </div>
-
   <main id="main">
     {{ content_for_layout }}
   </main>
-
   <div id="footer-group">
     {% sections 'footer-group' %}
   </div>
-
   {% liquid
     render 'offcanvas-cart'
     render 'offcanvas-search'
@@ -58,4 +71,3 @@
   %}
 </body>
 </html>
-    
