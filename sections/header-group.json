@@ -11,6 +11,46 @@
   "type": "header",
   "name": "Header Group",
   "sections": {
+    "announcement_bar_Ge9W3V": {
+      "type": "announcement-bar",
+      "blocks": {
+        "slide_j46kwk": {
+          "type": "slide",
+          "settings": {
+            "announcement": "Announce something important here"
+          }
+        },
+        "slide_mwF4Tk": {
+          "type": "slide",
+          "settings": {
+            "announcement": "Free Shipping For All Orders Over $100"
+          }
+        }
+      },
+      "block_order": [
+        "slide_j46kwk",
+        "slide_mwF4Tk"
+      ],
+      "settings": {
+        "bg_color": "bg-primary",
+        "bg_opacity": 100,
+        "bg_gradient": "bg-gradient",
+        "text_color": "text-white",
+        "border_top_width": 0,
+        "border_bottom_width": 0,
+        "border_color": "border-body",
+        "border_opacity": 100,
+        "container_max_width": "600",
+        "font_size": "fs-xs",
+        "font_size_desktop": "fs-desktop-sm",
+        "text_transform": "",
+        "letter_spacing": 1,
+        "carousel_autoplay": 5,
+        "carousel_vertical": true,
+        "pt": 4,
+        "pb": 4
+      }
+    },
     "navbar": {
       "type": "navbar",
       "blocks": {
@@ -18,8 +58,9 @@
           "type": "mobile",
           "settings": {
             "container_max_width": "",
+            "logo": "shopify:\/\/shop_images\/ks-bootshop-logo.png",
             "logo_height": 30,
-            "main_menu": "",
+            "main_menu": "dropdown-menu",
             "collections_menu": "",
             "social_icons": true,
             "pt": 2,
@@ -30,11 +71,11 @@
           "type": "desktop",
           "settings": {
             "container_max_width": "",
-            "logo": "shopify://shop_images/Nilaara_Logo_184b57c5-0620-47ca-9340-1da4acda6778.png",
-            "logo_height": 100,
-            "main_menu": "main-menu",
-            "pt": 0,
-            "pb": 0
+            "logo": "shopify:\/\/shop_images\/ks-bootshop-logo.png",
+            "logo_height": 32,
+            "main_menu": "dropdown-menu",
+            "pt": 5,
+            "pb": 5
           }
         }
       },
@@ -56,6 +97,7 @@
     }
   },
   "order": [
+    "announcement_bar_Ge9W3V",
     "navbar"
   ]
 }
