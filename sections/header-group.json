@@ -30,10 +30,11 @@
           "type": "desktop",
           "settings": {
             "container_max_width": "",
-            "logo_height": 32,
-            "main_menu": "",
-            "pt": 5,
-            "pb": 5
+            "logo": "shopify://shop_images/Nilaara_Logo_184b57c5-0620-47ca-9340-1da4acda6778.png",
+            "logo_height": 100,
+            "main_menu": "main-menu",
+            "pt": 0,
+            "pb": 0
           }
         }
       },
