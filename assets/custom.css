@@ -1,11 +1,14 @@
-.navbar .nav-item.dropdown:hover .dropdown-menu {
-    display: block;
-    opacity: 1;
-    transition: opacity 0.3s ease;
+/* Ensure the dropdown menu is hidden by default */
+.navbar .dropdown-menu {
+  display: none;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-/* Initially hide dropdown menus */
-.navbar .nav-item .dropdown-menu {
-    display: none;
-    opacity: 0;
+/* Display the dropdown menu and apply the slide-down effect on hover */
+.navbar .dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
 }
