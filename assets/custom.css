@@ -12,3 +12,8 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+.dropdown-item:hover {
+  background-color: #f1f1f1; /* Light grey background on hover */
+  color: #333; /* Dark text color on hover */
+}
