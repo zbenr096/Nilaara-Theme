@@ -22,9 +22,3 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
- item.removeEventListener('mouseenter', () => {});
-
-      item.removeEventListener('mouseleave', () => {});
-    }
-  });
-});
