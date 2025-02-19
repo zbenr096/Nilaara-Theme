@@ -9,18 +9,6 @@
  */
 {
   "sections": {
-    "separator_pMbxtB": {
-      "type": "separator",
-      "settings": {
-        "bg_color": "bg-primary",
-        "bg_opacity": 100,
-        "height": 6,
-        "container": "container",
-        "container_max_width": "",
-        "pt": 0,
-        "pb": 0
-      }
-    },
     "hero_carousel_CmDneU": {
       "type": "hero-carousel",
       "blocks": {
@@ -86,6 +74,18 @@
         "btn_primary_color": "btn-primary",
         "btn_secondary_color": "btn-secondary",
         "btn_font_size": "fs-md",
+        "pt": 0,
+        "pb": 0
+      }
+    },
+    "separator_pMbxtB": {
+      "type": "separator",
+      "settings": {
+        "bg_color": "bg-primary",
+        "bg_opacity": 100,
+        "height": 2,
+        "container": "container",
+        "container_max_width": "",
         "pt": 0,
         "pb": 0
       }
@@ -658,8 +658,8 @@
     }
   },
   "order": [
-    "separator_pMbxtB",
     "hero_carousel_CmDneU",
+    "separator_pMbxtB",
     "featured_products_nXJKQn",
     "richtext_4miPYL",
     "richtext_AtYwxr",

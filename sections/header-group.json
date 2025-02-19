@@ -46,7 +46,8 @@
         ".navbar {position: fixed; top: 0; left: 0; right: 0; width: 100%; background-color: #310057; z-index: 1000; transition: top 0.3s; /* Smooth transition for hiding */}",
         " /* Increase font size for navbar items */.navbar .nav-item {font-size: 18px; /* Adjust to your desired size */}",
         " /* Increase font size for dropdown menu items */.navbar .dropdown-item {font-size: 15px; /* Adjust to your desired size */}",
-        " /* Optional: Increase font size for the navbar brand (logo) */.navbar .navbar-logo {font-size: 50px; /* Adjust to your desired size */}"
+        " /* Optional: Increase font size for the navbar brand (logo) */.navbar .navbar-logo {font-size: 50px; /* Adjust to your desired size */}",
+        ".navbar {border-bottom: 2px solid red;}"
       ],
       "settings": {
         "bg_color": "bg-primary",
