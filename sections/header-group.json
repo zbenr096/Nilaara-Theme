@@ -43,7 +43,10 @@
         "069e870e-aed4-4929-bf73-c0daca8be18e"
       ],
       "custom_css": [
-        ".navbar {position: fixed; top: 0; left: 0; right: 0; width: 100%; background-color: #333; z-index: 1000; transition: top 0.3s; /* Smooth transition for hiding */}"
+        ".navbar {position: fixed; top: 0; left: 0; right: 0; width: 100%; background-color: #333; z-index: 1000; transition: top 0.3s; /* Smooth transition for hiding */}",
+        "/* Increase font size for navbar items */.navbar .nav-item {font-size: 18px; /* Adjust to your desired size */}",
+        "/* Increase font size for dropdown menu items */.navbar .dropdown-item {font-size: 14px; /* Adjust to your desired size */}",
+        "/* Optional: Increase font size for the navbar brand (logo) */.navbar .navbar-logo {font-size: 50px; /* Adjust to your desired size */}"
       ],
       "settings": {
         "bg_color": "bg-primary",
