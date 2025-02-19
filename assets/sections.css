@@ -111,9 +111,6 @@ body #footer-group::after  {
 } 
 
 
-@keyframes navbar_dropdown_open {
-  to { opacity: 1; visibility: visible; }
-}
 
 
 /*
