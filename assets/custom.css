@@ -9,7 +9,7 @@
 /* Display the dropdown menu and apply the slide-down effect on hover */
 .navbar .dropdown:hover .dropdown-menu {
   display: block;
-  opacity: 1;
+  opacity: 0.9;
   transform: translateY(0);
 }
 
