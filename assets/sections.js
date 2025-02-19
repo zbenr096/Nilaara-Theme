@@ -28,20 +28,7 @@ class Navbar extends HTMLElement {
     })
   }
 
-  handleHeaderReveal () {
-    let oldScroll = window.scrollY
-    const headerGroup = document.querySelector('#header-group')
-
-    window.addEventListener('scroll', () => {
-      const newScroll = window.scrollY
-      if (newScroll > oldScroll) {
-        if (newScroll > headerGroup.clientHeight) {
-          headerGroup.classList.add('hide')
-        }
-      } else if (newScroll < oldScroll) {
-        headerGroup.classList.remove('hide')
-      }
-
+  
       oldScroll = Math.max(window.scrollY, 0)
     })
   }
