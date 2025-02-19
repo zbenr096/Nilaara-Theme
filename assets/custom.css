@@ -15,5 +15,5 @@
 
 /* Highlight submenu items on hover */
 .dropdown-item:hover {
-  background-color: #ddd; /* Adjust as needed */
+  background-color: #d3d3d3; /* Adjust as needed */
 }
