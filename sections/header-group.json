@@ -42,14 +42,17 @@
         "37d4f863-aecd-4a86-87c1-a5887bf87140",
         "069e870e-aed4-4929-bf73-c0daca8be18e"
       ],
+      "custom_css": [
+        ".navbar {position: fixed; top: 0; left: 0; right: 0; width: 100%; background-color: #333; z-index: 1000; transition: top 0.3s; /* Smooth transition for hiding */}"
+      ],
       "settings": {
-        "bg_color": "bg-body",
+        "bg_color": "bg-primary",
         "bg_opacity": 100,
         "bg_gradient": "",
-        "text_color": "text-body",
+        "text_color": "text-primary",
         "border_top_width": 0,
         "border_bottom_width": 0,
-        "border_color": "border-body",
+        "border_color": "border-primary",
         "border_opacity": 100,
         "shadow": "shadow-sm"
       }
