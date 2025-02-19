@@ -1,23 +1,13 @@
-/* 
-  Add here your own custom css styles
-*/
-
-/* Ensure dropdown menus are hidden by default */
+/* Hide dropdown menus by default */
 .dropdown-menu {
-  display: none;
+  max-height: 0;
   opacity: 0;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  transform: translateY(-10%);
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
 }
 
-/* Display dropdown menus on hover with animation */
+/* Show dropdown menus on hover */
 .nav-item.dropdown:hover .dropdown-menu {
-  display: block;
+  max-height: 500px; /* Adjust based on your submenu's height */
   opacity: 1;
-  transform: translateY(0);
-}
-
-/* Ensure parent menu items are positioned correctly */
-.nav-item.dropdown {
-  position: relative;
 }
