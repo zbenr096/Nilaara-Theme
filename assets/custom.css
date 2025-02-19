@@ -24,3 +24,7 @@
 .navbar .nav-item {
   pointer-events: auto; /* Ensure other navbar items remain clickable */
 }
+
+.navbar .dropdown-toggle {
+  pointer-events: none;
+}
