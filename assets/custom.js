@@ -1,11 +1,16 @@
-document.addEventListener('DOMContentLoaded', function() {
-  // Select all dropdown toggle elements
-  var dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+document.addEventListener("DOMContentLoaded", function () {
+  let navbar = document.querySelector(".navbar");
+  let lastScrollTop = 0;
 
-  dropdownToggles.forEach(function(toggle) {
-    // Prevent default click behavior
-    toggle.addEventListener('click', function(event) {
-      event.preventDefault();
-    });
+  window.addEventListener("scroll", function () {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+      navbar.classList.remove("show"); // Hide on scroll down
+    } else {
+      navbar.classList.add("show"); // Show on scroll up
+    }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Prevent negative values
   });
 });
