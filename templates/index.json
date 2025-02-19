@@ -15,6 +15,7 @@
         "slide_Q4UPQq": {
           "type": "slide",
           "settings": {
+            "img_desktop": "shopify://shop_images/model-in-gold-fashion.jpg",
             "overlay_color": "#000000",
             "overlay_opacity": 10,
             "overlay_blur": 2,
