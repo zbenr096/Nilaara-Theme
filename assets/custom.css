@@ -13,10 +13,7 @@
   transform: translateY(0);
 }
 
-/* Style for submenu items */
-.dropdown-item {
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  color: black; /* Adjust as needed */
+/* Highlight submenu items on hover */
+.dropdown-item:hover {
+  background-color: #ddd; /* Adjust as needed */
 }
