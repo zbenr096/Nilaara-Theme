@@ -110,16 +110,6 @@ body #footer-group::after  {
   backdrop-filter: blur(var(--bs-dialog-backdrop-blur));
 } 
 
-body.navbar-dropdown-open #main,
-body.navbar-dropdown-open #footer-group {
-  position: relative;
-  overflow: hidden;
-}
-
-body.navbar-dropdown-open #main::after,
-body.navbar-dropdown-open #footer-group::after {
-  animation: navbar_dropdown_open .4s ease-out both;
-}
 
 @keyframes navbar_dropdown_open {
   to { opacity: 1; visibility: visible; }
