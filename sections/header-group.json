@@ -47,7 +47,7 @@
         " /* Increase font size for navbar items */.navbar .nav-item {font-size: 18px; /* Adjust to your desired size */}",
         " /* Increase font size for dropdown menu items */.navbar .dropdown-item {font-size: 15px; /* Adjust to your desired size */}",
         " /* Optional: Increase font size for the navbar brand (logo) */.navbar .navbar-logo {font-size: 50px; /* Adjust to your desired size */}",
-        ".navbar {border-bottom: 2px solid red;}"
+        ".navbar {border-bottom: 1px solid red;}"
       ],
       "settings": {
         "bg_color": "bg-primary",
