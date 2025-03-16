@@ -28,3 +28,23 @@
 .navbar .dropdown-toggle {
   pointer-events: none;
 }
+
+/* Shopify Footer Custom Styling */
+.footer {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    padding: 20px 0; /* Adjust padding */
+    text-align: center; /* Center align text */
+}
+
+/* Footer Links Styling */
+.footer a {
+    color: #ffffff; /* White links */
+    text-decoration: none; /* Remove underline */
+    transition: text-shadow 0.3s ease-in-out; /* Smooth glow effect */
+}
+
+/* Glow effect on hover */
+.footer a:hover {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8); /* White glow */
+}
