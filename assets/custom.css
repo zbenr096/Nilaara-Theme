@@ -17,7 +17,7 @@
 
 /* Highlight submenu items on hover */
 .dropdown-item:hover {
-  background-color: #e6e3e3 ; /* Adjust as needed */
+  background-color: #e6e3e3; /* Adjust as needed */
 }
 
 /* Keep the rest of the navbar clickable */
@@ -27,6 +27,35 @@
 
 .navbar .dropdown-toggle {
   pointer-events: none;
+}
+
+/* Navbar spacing variable */
+:root {
+  --navbar-height: 60px; /* Adjust this to match your actual navbar height */
+}
+
+/* Add spacing for sections that need to account for the navbar */
+.navbar-spacing {
+  padding-top: calc(var(--navbar-height) + 2rem) !important;
+}
+
+/* For responsive navbar heights */
+@media (max-width: 767px) {
+  :root {
+    --navbar-height: 50px; /* Mobile */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  :root {
+    --navbar-height: 60px; /* Tablet */
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --navbar-height: 70px; /* Desktop */
+  }
 }
 
 /* Shopify Footer Custom Styling */
