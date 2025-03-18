@@ -173,8 +173,8 @@
         "collection_rznnLq": {
           "type": "collection",
           "settings": {
-            "collection": "men",
-            "title": ""
+            "collection": "sarees",
+            "title": "Sarees"
           }
         },
         "collection_KdHXk9": {
@@ -221,7 +221,6 @@
         "collection_fQ9QDf",
         "collection_kRQqkR"
       ],
-      "disabled": true,
       "settings": {
         "bg_color": "bg-body",
         "bg_opacity": 100,
@@ -249,7 +248,7 @@
         "collection_card_show_title": true,
         "collection_card_title_font_size": "fs-md",
         "collection_card_title_position": "collection-card-title-normal",
-        "collection_card_show_product_count": true,
+        "collection_card_show_product_count": false,
         "breakpoint_mobile": 1,
         "breakpoint_tablet": 2,
         "breakpoint_desktop": 3,
