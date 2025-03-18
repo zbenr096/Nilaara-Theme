@@ -12,33 +12,15 @@
     "hero_carousel_CmDneU": {
       "type": "hero-carousel",
       "blocks": {
-        "slide_Q4UPQq": {
+        "slide_PHdBLF": {
           "type": "slide",
-          "disabled": true,
-          "settings": {
-            "img_desktop": "shopify://shop_images/model-in-gold-fashion.jpg",
-            "overlay_color": "#000000",
-            "overlay_opacity": 10,
-            "overlay_blur": 2,
-            "subtitle": "Developed by KondaSoft",
-            "title": "Welcome to KS BootShop Theme",
-            "description": "<p>Free Shopify Theme inspired by simplicity and elegance.</p>",
-            "btn_primary_text": "Get theme",
-            "btn_primary_url": "https://www.kondasoft.com/collections/shopify-themes/products/ks-bootshop",
-            "btn_secondary_text": "Learn more",
-            "btn_secondary_url": "https://www.kondasoft.com/collections/shopify-themes/products/ks-bootshop"
-          }
-        },
-        "slide_TddqxQ": {
-          "type": "slide",
-          "disabled": true,
           "settings": {
             "overlay_color": "#000000",
-            "overlay_opacity": 10,
-            "overlay_blur": 2,
-            "subtitle": "Developed by KondaSoft",
-            "title": "Simple to Use, Easy to Customize",
-            "description": "<p>Free Shopify Theme inspired by simplicity and elegance.</p>",
+            "overlay_opacity": 30,
+            "overlay_blur": 0,
+            "subtitle": "Optional Subtitle",
+            "title": "Welcome to our store",
+            "description": "<p>An optional description for this slide</p>",
             "btn_primary_text": "Primary button",
             "btn_primary_url": "",
             "btn_secondary_text": "Secondary button",
@@ -47,8 +29,7 @@
         }
       },
       "block_order": [
-        "slide_Q4UPQq",
-        "slide_TddqxQ"
+        "slide_PHdBLF"
       ],
       "settings": {
         "bg_color": "bg-body",
@@ -447,14 +428,14 @@
           "type": "item",
           "settings": {
             "title": "Where do you ship?",
-            "description": "<p>We ship all around the world... Please provide here you own shipping information, including times, prices, options etc.</p>"
+            "description": "<p>We ship in Quebec and Ontario at the moment, with plans to ship all over Canada in the near future.</p>"
           }
         },
         "item_EemRD3": {
           "type": "item",
           "settings": {
             "title": "How long will it take to receive my order",
-            "description": "<p>This depends on whether it is an International or a Domestic order. All orders within the U.S. are considered domestic orders and they are shipped and delivered within 2-5 business days. Please see International Orders for more details.</p>"
+            "description": "<p>Orders on items with preset sizes will arrive with 5-7 business days. For orders with custom sizes/stiching, expect a delivery within 7-10 business days.</p>"
           }
         },
         "item_jyLYkB": {
@@ -468,21 +449,21 @@
           "type": "item",
           "settings": {
             "title": "How can I track my order?",
-            "description": "<p>We will send tracking information to the e-mail address associated with your order once the item has shipped. If you have not received your tracking information and it has been over 2 business day, please contact us at (012) 123 - 4567</p>"
+            "description": "<p>We will send tracking information to the e-mail address associated with your order once the item has shipped. If you have not received your tracking information and it has been over 2 business day, please contact us.</p>"
           }
         },
         "item_kWLWrb": {
           "type": "item",
           "settings": {
             "title": "Can I order as a gift for someone else?",
-            "description": "<p>When ordering as a gift for someone, be sure to enter in your email address to receive all summary information but enter in the recipient’s name and shipping information. We will be sure to keep all prices and receipts out of the package.</p>"
+            "description": "<p>When ordering as a gift for someone, be sure to enter in your email address to receive all summary information but enter in the recipient’s name and shipping information. </p>"
           }
         },
         "item_dizKmG": {
           "type": "item",
           "settings": {
             "title": "How can I get a refund for my order?",
-            "description": "<p>If for any reason you are not completely satisfied with your purchase, within 30 days of placing your order, we will refund you for your purchase with no questions asked.</p>"
+            "description": "<p>If for any reason you are not completely satisfied with your purchase, within 14 days of receiving your order, we will refund you with store credits for your purchase, no questions asked.</p>"
           }
         }
       },
@@ -495,7 +476,6 @@
         "item_kWLWrb",
         "item_dizKmG"
       ],
-      "disabled": true,
       "settings": {
         "bg_color": "bg-body",
         "bg_opacity": 100,
