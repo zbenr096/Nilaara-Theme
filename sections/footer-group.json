@@ -63,6 +63,7 @@
     },
     "newsletter_jhJ6Re": {
       "type": "newsletter",
+      "disabled": true,
       "settings": {
         "bg_color": "bg-body",
         "bg_opacity": 100,
