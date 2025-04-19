@@ -126,7 +126,7 @@
         "bg_gradient": "",
         "text_color": "text-secondary",
         "border_top_width": 1,
-        "border_bottom_width": 0,
+        "border_bottom_width": 1,
         "border_color": "border-body",
         "border_opacity": 10,
         "container_max_width": "",
@@ -152,7 +152,7 @@
         "breakpoint_tablet": 4,
         "breakpoint_desktop": 4,
         "pt": 11,
-        "pb": 11
+        "pb": 0
       }
     },
     "featured_products_nXJKQn": {
