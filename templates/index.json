@@ -15,7 +15,7 @@
         "slide_PHdBLF": {
           "type": "slide",
           "settings": {
-            "img_desktop": "shopify://shop_images/Hero_Banner_-_Desktop_80629fb7-936f-4237-9a28-68ca8f323482.jpg",
+            "img_desktop": "shopify://shop_images/Hero_Photo.jpg",
             "overlay_color": "#000000",
             "overlay_opacity": 30,
             "overlay_blur": 0,
@@ -31,6 +31,9 @@
       },
       "block_order": [
         "slide_PHdBLF"
+      ],
+      "custom_css": [
+        ".hero-carousel {display: flex; justify-content: center; align-items: center; text-align: center;}"
       ],
       "settings": {
         "bg_color": "bg-body",
@@ -49,7 +52,7 @@
         "carousel_effect": "",
         "media_mobile_height": 500,
         "media_desktop_height": 900,
-        "media_adapt": false,
+        "media_adapt": true,
         "media_full": true,
         "caption_max_width": "200",
         "caption_position": "carousel-caption-center",
@@ -82,7 +85,7 @@
           "type": "collection",
           "settings": {
             "collection": "sarees",
-            "img": "shopify://shop_images/Saree_Category_565f4c57-d236-4c67-8a6a-2215946a09c1.jpg",
+            "img": "shopify://shop_images/Saree_Category_4dde9dbf-9c34-4eb7-9acc-49d7fc42c9a8.jpg",
             "title": ""
           }
         },
@@ -90,6 +93,7 @@
           "type": "collection",
           "settings": {
             "collection": "lepengas",
+            "img": "shopify://shop_images/Lehenga_Category.jpg",
             "title": ""
           }
         },
