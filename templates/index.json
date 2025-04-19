@@ -107,7 +107,8 @@
         "collection_fQ9QDf": {
           "type": "collection",
           "settings": {
-            "collection": "latest",
+            "collection": "jewelry",
+            "img": "shopify://shop_images/Jewelry_Category.jpg",
             "title": ""
           }
         },
