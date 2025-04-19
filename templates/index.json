@@ -111,21 +111,13 @@
             "img": "shopify://shop_images/Jewelry_Category.jpg",
             "title": ""
           }
-        },
-        "collection_kRQqkR": {
-          "type": "collection",
-          "settings": {
-            "collection": "sale",
-            "title": ""
-          }
         }
       },
       "block_order": [
         "collection_XRMXNt",
         "collection_KdHXk9",
         "collection_b7ELCB",
-        "collection_fQ9QDf",
-        "collection_kRQqkR"
+        "collection_fQ9QDf"
       ],
       "settings": {
         "bg_color": "bg-body",
@@ -155,9 +147,9 @@
         "collection_card_title_font_size": "fs-md",
         "collection_card_title_position": "collection-card-title-normal",
         "collection_card_show_product_count": false,
-        "breakpoint_mobile": 1,
-        "breakpoint_tablet": 2,
-        "breakpoint_desktop": 3,
+        "breakpoint_mobile": 3,
+        "breakpoint_tablet": 4,
+        "breakpoint_desktop": 4,
         "pt": 11,
         "pb": 11
       }
