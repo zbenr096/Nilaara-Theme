@@ -409,13 +409,6 @@
     "faq_7TT7z4": {
       "type": "faq",
       "blocks": {
-        "item_KKbWTC": {
-          "type": "item",
-          "settings": {
-            "title": "",
-            "description": ""
-          }
-        },
         "item_AgKJ3m": {
           "type": "item",
           "settings": {
@@ -460,7 +453,6 @@
         }
       },
       "block_order": [
-        "item_KKbWTC",
         "item_AgKJ3m",
         "item_EemRD3",
         "item_jyLYkB",
