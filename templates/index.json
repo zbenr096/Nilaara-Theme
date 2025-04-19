@@ -101,6 +101,7 @@
           "type": "collection",
           "settings": {
             "collection": "dupattas",
+            "img": "shopify://shop_images/Dupatta_Category.png",
             "title": ""
           }
         },
