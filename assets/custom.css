@@ -126,3 +126,8 @@ body {
   text-decoration: none;
 }
 
+/* Hide template title */
+.template-page .page-title {
+  display: none;
+}
+
