@@ -130,4 +130,7 @@ body {
 body .shopify-policy__title {
   display: none !important;
 }
-
+.shopify-policy__container {
+    margin-left: 220px !important;
+    margin-right: 220px !important;
+}
