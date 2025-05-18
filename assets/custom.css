@@ -131,3 +131,11 @@ body .shopify-policy__title {
   display: none !important;
 }
 
+/* Make policy page content wider on desktop */
+@media (min-width: 992px) {
+  body.template-policy .shopify-policy__container {
+    max-width: 1000px;   /* Adjust to your preferred width */
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
