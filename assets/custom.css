@@ -131,6 +131,7 @@ body .shopify-policy__title {
   display: none !important;
 }
 .shopify-policy__container {
-    margin-left: 220px !important;
-    margin-right: 220px !important;
+  max-width: 100% !important;
+  margin: 0 auto;
+  padding: 0 20px; /* Optional: Add some padding on the sides */
 }
