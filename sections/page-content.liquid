@@ -18,10 +18,17 @@
   <div 
     class="container" 
     style="max-width: {{ section.settings.container_max_width }}px">
-    {% unless section.settings.show_title == blank or page.handle contains 'policy' %}
-      <h1 class="title {{ section.settings.title_font_size }}">
-        {{ page.title }}
-      </h1>
+    {% unless section.settings.show_title == blank %}
+      {% assign is_policy_page = false %}
+      {% if page.handle contains 'policy' or page.handle contains 'terms' or page.handle contains 'privacy' or page.handle contains 'shipping' or page.handle contains 'refund' %}
+        {% assign is_policy_page = true %}
+      {% endif %}
+      
+      {% unless is_policy_page and section.settings.hide_policy_titles %}
+        <h1 class="title {{ section.settings.title_font_size }}">
+          {{ page.title }}
+        </h1>
+      {% endunless %}
     {% endunless %}
     <div class="description rte {{ section.settings.description_font_size }}">
       {{ page.content }}
@@ -138,6 +145,13 @@
       "id": "show_title",
       "label": "Show page title",
       "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_policy_titles",
+      "label": "Hide titles on policy pages",
+      "default": false,
+      "info": "Hides titles on pages with handles containing 'policy', 'terms', 'privacy', 'shipping', or 'refund'"
     },
     {
       "type": "select",
