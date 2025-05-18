@@ -18,11 +18,24 @@
   <div 
     class="container" 
     style="max-width: {{ section.settings.container_max_width }}px">
-    {% unless section.settings.show_title == blank or page.handle contains 'policy' %}
-      <h1 class="title {{ section.settings.title_font_size }}">
-        {{ page.title }}
-      </h1>
-    {% endunless %}
+    {% if section.settings.show_title %}
+      {% comment %}Check if this page is in the policy pages list{% endcomment %}
+      {% assign show_this_title = true %}
+      {% if section.settings.hide_policy_titles %}
+        {% for policy_handle in section.settings.policy_page_handles %}
+          {% if page.handle == policy_handle %}
+            {% assign show_this_title = false %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+      
+      {% if show_this_title %}
+        <h1 class="title {{ section.settings.title_font_size }}">
+          {{ page.title }}
+        </h1>
+      {% endif %}
+    {% endif %}
     <div class="description rte {{ section.settings.description_font_size }}">
       {{ page.content }}
     </div>
@@ -137,7 +150,20 @@
       "type": "checkbox",
       "id": "show_title",
       "label": "Show page title",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_policy_titles",
+      "label": "Hide titles on policy pages",
       "default": false
+    },
+    {
+      "type": "textarea",
+      "id": "policy_page_handles",
+      "label": "Policy page handles (one per line)",
+      "default": "refund-policy\nprivacy-policy\nterms-of-service\nshipping-policy",
+      "info": "Enter the handles of your policy pages, one per line. These are the last parts of the URLs of your policy pages."
     },
     {
       "type": "select",
