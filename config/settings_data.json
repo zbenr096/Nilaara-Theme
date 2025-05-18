@@ -13,6 +13,7 @@
     "color_secondary": "#000000",
     "color_body_bg": "#ffffff",
     "color_body_color": "#000000",
+    "transparent_header": "",
     "container_max_width": 1350,
     "border_radius": 0.3,
     "logo": "shopify://shop_images/Nilaara_Logo_184b57c5-0620-47ca-9340-1da4acda6778.png",

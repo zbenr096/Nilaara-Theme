@@ -22,7 +22,7 @@
             "main_menu": "",
             "collections_menu": "",
             "social_icons": true,
-            "pt": 2,
+            "pt": 4,
             "pb": 2
           }
         },
@@ -31,10 +31,10 @@
           "settings": {
             "container_max_width": "",
             "logo": "shopify://shop_images/Site_Logo.png",
-            "logo_height": 100,
+            "logo_height": 90,
             "main_menu": "main-menu",
-            "pt": 2,
-            "pb": 3
+            "pt": 0,
+            "pb": 0
           }
         }
       },
@@ -45,9 +45,10 @@
       "custom_css": [
         ".navbar {position: fixed; top: 0; left: 0; right: 0; width: 100%; background-color: #eeebe6; z-index: 1000; transition: top 0.3s; /* Smooth transition for hiding */}",
         " /* Increase font size for navbar items */.navbar .nav-item {font-size: 18px; /* Adjust to your desired size */}",
-        " /* Increase font size for dropdown menu items */.navbar .dropdown-item {font-size: 15px; /* Adjust to your desired size */}",
-        " /* Optional: Increase font size for the navbar brand (logo) */.navbar .navbar-logo {font-size: 50px; /* Adjust to your desired size */}",
-        ".navbar {border-bottom: 1px solid red;}"
+        ".navbar .dropdown-item {font-size: 15px; /* Adjust to your desired size */}",
+        ".navbar .navbar-logo {font-size: 20px; /* Adjust to your desired size */}",
+        ".navbar {border-bottom: 1px solid red;}",
+        "body {padding-top: 800px; /* Adjust this number to match your navbar height */}"
       ],
       "settings": {
         "bg_color": "bg-primary",
