@@ -31,10 +31,10 @@
           "settings": {
             "container_max_width": "",
             "logo": "shopify://shop_images/Site_Logo.png",
-            "logo_height": 90,
+            "logo_height": 80,
             "main_menu": "main-menu",
             "pt": 0,
-            "pb": 0
+            "pb": 2
           }
         }
       },
