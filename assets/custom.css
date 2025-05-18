@@ -127,8 +127,7 @@ body {
 }
 
 /* Hide Title  */
-.template-policies .page-header,
-.template-page__cookies .page-header {
+.template-policies .page-header {
   display: none !important;
 }
 
