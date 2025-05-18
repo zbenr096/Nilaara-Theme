@@ -18,7 +18,7 @@
   <div 
     class="container" 
     style="max-width: {{ section.settings.container_max_width }}px">
-    {% unless section.settings.show_title == blank %}
+    {% unless section.settings.show_title == blank or page.handle contains 'policy' %}
       <h1 class="title {{ section.settings.title_font_size }}">
         {{ page.title }}
       </h1>
