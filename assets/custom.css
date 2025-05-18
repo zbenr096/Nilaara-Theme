@@ -126,8 +126,10 @@ body {
   text-decoration: none;
 }
 
-/* Hide template title */
-.template-page .page-title {
-  display: none;
+/* Hide Title  */
+.template-policies .page-header,
+.template-page__cookies .page-header {
+  display: none !important;
 }
+
 
