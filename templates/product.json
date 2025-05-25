@@ -31,9 +31,9 @@
         "40d3cdd3-9d78-4f15-b346-c3f46d49f7b1": {
           "type": "title",
           "settings": {
-            "title_font_size": "h2",
-            "pt": 14,
-            "pb": 2
+            "title_font_size": "h3",
+            "pt": 3,
+            "pb": 0
           }
         },
         "bf49a5ff-d625-4485-a09c-44d883547f90": {
@@ -52,7 +52,7 @@
         "095886ab-f46a-4a25-9d3d-e7c79235921b": {
           "type": "price",
           "settings": {
-            "font_size": "fs-lg",
+            "font_size": "fs-xxl",
             "badge_discount_type": "percentage",
             "pt": 0,
             "pb": 3
@@ -84,7 +84,7 @@
           "settings": {
             "show_qty_field": true,
             "show_dynamic_buttons": false,
-            "atc_btn_color": "btn-primary",
+            "atc_btn_color": "btn-secondary",
             "atc_btn_size": "",
             "show_buy_btn": true,
             "buy_btn_color": "btn-outline-secondary",
@@ -123,7 +123,7 @@
             "border_bottom_width": 0,
             "border_color": "border-body",
             "border_opacity": 100,
-            "open_by_default": true,
+            "open_by_default": false,
             "pt": 0,
             "pb": 0
           }

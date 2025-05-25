@@ -19,12 +19,12 @@
             "overlay_color": "#000000",
             "overlay_opacity": 30,
             "overlay_blur": 0,
-            "subtitle": "Optional Subtitle",
+            "subtitle": "",
             "title": "Nilaara",
             "description": "<p>An optional description for this slide</p>",
-            "btn_primary_text": "Primary button",
+            "btn_primary_text": "Shop Now",
             "btn_primary_url": "",
-            "btn_secondary_text": "Secondary button",
+            "btn_secondary_text": "",
             "btn_secondary_url": ""
           }
         }
@@ -479,6 +479,30 @@
         "pb": 11
       }
     },
+    "newsletter_Aa4qmp": {
+      "type": "newsletter",
+      "name": "Newsletter",
+      "settings": {
+        "bg_color": "bg-body",
+        "bg_opacity": 100,
+        "bg_gradient": "",
+        "text_color": "text-body",
+        "border_top_width": 0,
+        "border_bottom_width": 0,
+        "border_color": "border-body",
+        "border_opacity": 100,
+        "container_max_width": "",
+        "header_title": "Sign up",
+        "header_title_font_size": "h2",
+        "header_description": "<p>Add on optional description for this section</p>",
+        "header_description_font_size": "fs-md",
+        "btn_color": "btn-primary",
+        "btn_size": "",
+        "notice": "<p>By signing up for email, you agree to our <a href=\"/policies/terms-of-service\">Terms of Service</a> and <a href=\"/policies/privacy-policy\">Privacy Policy</a>.</p>",
+        "pt": 10,
+        "pb": 10
+      }
+    },
     "testimonials_eFtnyC": {
       "type": "testimonials",
       "blocks": {
@@ -636,6 +660,7 @@
     "media_with_text_xTY8gi",
     "card_slider_BFzjjF",
     "faq_7TT7z4",
+    "newsletter_Aa4qmp",
     "testimonials_eFtnyC",
     "blog_slider_UUweWT"
   ]

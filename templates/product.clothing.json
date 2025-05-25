@@ -31,8 +31,8 @@
         "40d3cdd3-9d78-4f15-b346-c3f46d49f7b1": {
           "type": "title",
           "settings": {
-            "title_font_size": "h2",
-            "pt": 14,
+            "title_font_size": "h3",
+            "pt": 1,
             "pb": 2
           }
         },
@@ -52,7 +52,7 @@
         "095886ab-f46a-4a25-9d3d-e7c79235921b": {
           "type": "price",
           "settings": {
-            "font_size": "fs-lg",
+            "font_size": "fs-xxl",
             "badge_discount_type": "percentage",
             "pt": 0,
             "pb": 3
