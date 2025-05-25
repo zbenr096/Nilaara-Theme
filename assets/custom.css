@@ -158,3 +158,23 @@ body .shopify-policy__title {
   }
 </style>
 
+/* Newsletter  */
+
+<style>
+  .newsletter input:focus {
+    border-color: #ba1c24;
+    box-shadow: 0 0 0 0.2rem rgba(186, 28, 36, 0.15);
+  }
+
+  .newsletter .btn {
+    transition: background-color 0.3s ease;
+  }
+
+  .newsletter .btn:hover {
+    background-color: #a3171f;
+  }
+
+  .newsletter .input-group {
+    max-width: 100%;
+  }
+</style>
