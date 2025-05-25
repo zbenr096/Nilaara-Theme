@@ -135,3 +135,26 @@ body .shopify-policy__title {
   margin: 0 auto;
   padding: 0 20px; /* Optional: Add some padding on the sides */
 }
+
+/* Contact Form  */
+<style>
+  .form-label {
+    font-size: 1rem;
+    color: #333;
+  }
+
+  .form-control:focus {
+    border-color: #ba1c24;
+    box-shadow: 0 0 0 0.2rem rgba(186, 28, 36, 0.25);
+  }
+
+  .btn-primary {
+    background-color: #ba1c24;
+    border: none;
+  }
+
+  .btn-primary:hover {
+    background-color: #99141d;
+  }
+</style>
+
