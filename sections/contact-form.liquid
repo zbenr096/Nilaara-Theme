@@ -1,131 +1,65 @@
 <section
-  id="contact-form-section-{{ section.id }}" 
-  class="
-    contact-form-section 
-    position-relative overflow-hidden
-    {{ section.settings.bg_color }} 
-    {{ section.settings.bg_gradient }}
-    {{ section.settings.text_color }}
-    {{ section.settings.border_top_width | prepend: 'border-top-' }}
-    {{ section.settings.border_bottom_width | prepend: 'border-bottom-' }}
-    {{ section.settings.border_color }} 
-    {{ section.settings.pt | prepend: 'pt-' }} 
-    {{ section.settings.pb | prepend: 'pb-' }}"
-  style="
-    --bs-bg-opacity: {{ section.settings.bg_opacity | append: '%' }};
-    --bs-border-opacity: {{ section.settings.border_opacity | append: '%' }};">
-  
-  <div class="container" style="max-width: {{ section.settings.container_max_width }}px">
-    <div class="row align-items-center fade-in-up">
-      
-      {% if section.settings.img != nil %}
-        <div class="col-desktop-7 mb-6 mb-desktop-0">
-          {% render 'image-url', img: section.settings.img, size: 900, orientation: section.settings.img_orientation, class: section.settings.img_border %}
-        </div>
-      {% endif %}
-
-      <div class="{% if section.settings.img == nil %}col-desktop-18{% else %}col-desktop-11{% endif %}">
-        <div class="mb-6 text-center">
-          <h2 class="fw-bold display-6 lh-1 mb-3 animate__animated animate__fadeInDown">{{ section.settings.header_title }}</h2>
-          <div class="fs-5 text-muted animate__animated animate__fadeIn animate__delay-1s">
-            {{ section.settings.header_description }}
-          </div>
-        </div>
-
-        {% form 'contact' %}
-          {% if form.posted_successfully? %}
-            <p class="form-success alert alert-success mb-5" role="alert">
-              {{ 'general.contact_form.success' | t }}
-            </p>
-          {% endif %}
-          {{ form.errors | default_errors }}
-
-          {% assign input_style = "form-control border-0 border-bottom border-dark rounded-0 shadow-none bg-transparent transition-all" %}
-
-          <div class="form-floating mb-4">
-            <input 
-              id="contact-form-name"
-              class="{{ input_style }}" 
-              type="text" 
-              name="contact[name]"
-              value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"  
-              placeholder="{{ 'general.contact_form.name' | t }}"
-              required>
-            <label for="contact-form-name">{{ 'general.contact_form.name' | t }}</label>
-          </div>
-
-          <div class="form-floating mb-4">
-            <input 
-              id="contact-form-email"
-              class="{{ input_style }}" 
-              type="email" 
-              name="contact[email]"
-              value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"  
-              placeholder="{{ 'general.contact_form.email' | t }}"
-              spellcheck="false"
-              autocapitalize="off"
-              required>
-            <label for="contact-form-email">{{ 'general.contact_form.email' | t }}</label>
-          </div>
-
-          <div class="form-floating mb-4">
-            <input 
-              id="contact-form-phone"
-              class="{{ input_style }}" 
-              type="tel" 
-              name="contact[phone]"
-              value="{{ customer.phone }}"  
-              placeholder="{{ 'general.contact_form.phone' | t }}"
-              pattern="[0-9\-]*"
-              autocomplete="tel">
-            <label for="contact-form-phone">{{ 'general.contact_form.phone' | t }}</label>
-          </div>
-
-          <div class="form-floating mb-5">
-            <textarea
-              id="contact-form-message"
-              class="{{ input_style }}"
-              name="contact[message]"
-              placeholder="{{ 'general.contact_form.message' | t }}"
-              required
-              style="height: 200px">{{- form.body -}}</textarea>
-            <label for="contact-form-message">{{ 'general.contact_form.message' | t }}</label>
-          </div>
-
-          <button 
-              type="submit" 
-              class="btn btn-primary btn-lg w-100 rounded-pill px-5 py-3 transition-all">
-              {{ 'general.contact_form.send' | t }}
-          </button>
-        {% endform %}
-      </div>
+  id="contact-form-section-{{ section.id }}"
+  class="py-12 {{ section.settings.bg_color }} {{ section.settings.text_color }}">
+  <div class="container" style="max-width: 800px;">
+    <div class="text-center mb-6">
+      <h2 class="display-6 fw-bold mb-2">{{ section.settings.header_title }}</h2>
+      <p class="fs-5 text-muted">{{ section.settings.header_description }}</p>
     </div>
+
+    {% form 'contact' %}
+      {% if form.posted_successfully? %}
+        <p class="alert alert-success text-center">{{ 'general.contact_form.success' | t }}</p>
+      {% endif %}
+      {{ form.errors | default_errors }}
+
+      <div class="mb-4">
+        <label for="contact-form-name" class="form-label fw-semibold">Name</label>
+        <input
+          id="contact-form-name"
+          type="text"
+          name="contact[name]"
+          class="form-control border rounded shadow-sm"
+          value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
+          required>
+      </div>
+
+      <div class="mb-4">
+        <label for="contact-form-email" class="form-label fw-semibold">Email</label>
+        <input
+          id="contact-form-email"
+          type="email"
+          name="contact[email]"
+          class="form-control border rounded shadow-sm"
+          value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+          required>
+      </div>
+
+      <div class="mb-4">
+        <label for="contact-form-phone" class="form-label fw-semibold">Phone (optional)</label>
+        <input
+          id="contact-form-phone"
+          type="tel"
+          name="contact[phone]"
+          class="form-control border rounded shadow-sm"
+          value="{{ customer.phone }}">
+      </div>
+
+      <div class="mb-4">
+        <label for="contact-form-message" class="form-label fw-semibold">Message</label>
+        <textarea
+          id="contact-form-message"
+          name="contact[message]"
+          class="form-control border rounded shadow-sm"
+          rows="6"
+          required>{{- form.body -}}</textarea>
+      </div>
+
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary px-5 py-3 rounded-pill">
+          {{ 'general.contact_form.send' | t }}
+        </button>
+      </div>
+    {% endform %}
   </div>
 </section>
-
-<style>
-  .fade-in-up {
-    animation: fadeInUp 1s ease-in-out both;
-  }
-
-  @keyframes fadeInUp {
-    0% { opacity: 0; transform: translateY(20px); }
-    100% { opacity: 1; transform: translateY(0); }
-  }
-
-  .form-control:focus {
-    border-color: #ba1c24 !important; /* Nilaara accent */
-    box-shadow: none;
-    transition: border-color 0.3s ease-in-out;
-  }
-
-  .btn-primary {
-    background-color: #ba1c24;
-    border: none;
-    transition: background-color 0.3s ease;
-  }
-
-  .btn-primary:hover {
-    background-color: #a3171f;
-  }
-</style>
