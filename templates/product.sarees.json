@@ -31,7 +31,7 @@
         "40d3cdd3-9d78-4f15-b346-c3f46d49f7b1": {
           "type": "title",
           "settings": {
-            "title_font_size": "h3",
+            "title_font_size": "h1",
             "pt": 3,
             "pb": 0
           }
@@ -162,33 +162,20 @@
             "pb": 0
           }
         },
-        "0f571c64-329e-4ea3-9c76-ebf86266226a": {
-          "type": "collapse",
-          "settings": {
-            "icon_size": 20,
-            "title": "Sizing",
-            "title_font_family": "",
-            "title_font_size": "fs-md",
-            "title_text_transform": "text-capitalize",
-            "title_letter_spacing": 1,
-            "description": "<p>fuck off bitch</p>",
-            "product_description": false,
-            "description_font_size": "fs-md",
-            "border_top_width": 1,
-            "border_bottom_width": 1,
-            "border_color": "border-body",
-            "border_opacity": 100,
-            "open_by_default": false,
-            "pt": 0,
-            "pb": 0
-          }
-        },
         "separator_cWJNG3": {
           "type": "separator",
           "settings": {
             "bg_color": "bg-body",
             "bg_opacity": 10,
             "height": 1,
+            "pt": 3,
+            "pb": 3
+          }
+        },
+        "liquid_LGnHfj": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"product-share mt-4 text-start\">\n  <h5 class=\"mb-3\">Share</h5>\n  <div style=\"display: flex; gap: 12px; align-items: center;\">\n\n    {% assign share_bg = '#001F3F' %}\n    {% assign icon_color = '#fff' %}\n\n    <!-- Icon Wrapper Style -->\n    <style>\n      .share-icon {\n        width: 40px;\n        height: 40px;\n        background-color: {{ share_bg }};\n        border-radius: 8px;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        transition: background-color 0.3s ease;\n      }\n      .share-icon:hover {\n        background-color: #ba1c24;\n      }\n      .share-icon svg {\n        width: 20px;\n        height: 20px;\n        fill: {{ icon_color }};\n      }\n    </style>\n\n    <!-- Facebook -->\n    <a href=\"https://www.facebook.com/sharer/sharer.php?u={{ shop.url }}{{ product.url }}\" target=\"_blank\" aria-label=\"Facebook\" class=\"share-icon\">\n      <svg viewBox=\"0 0 24 24\"><path d=\"M22 12a10 10 0 10-11.5 9.87v-7h-2v-2.87h2v-2.2c0-2 1.2-3.1 3.04-3.1.88 0 1.8.16 1.8.16v2h-1.02c-1 0-1.3.63-1.3 1.27v1.87h2.22l-.36 2.87h-1.86v7A10 10 0 0022 12z\"/></svg>\n    </a>\n\n    <!-- Instagram -->\n    <a href=\"https://www.instagram.com/\" target=\"_blank\" aria-label=\"Instagram\" class=\"share-icon\">\n      <svg viewBox=\"0 0 448 512\"><path d=\"M224.1 141c-63.6 0-114.9 51.3-114.9 114.9S160.5 370.8 224.1 370.8 339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.2 0-74.7-33.5-74.7-74.7S182.9 181.2 224.1 181.2s74.7 33.5 74.7 74.7-33.5 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.9-26.9 26.9s-26.9-12-26.9-26.9 12-26.9 26.9-26.9 26.9 12 26.9 26.9zm76.1 27.2c-1.7-35.7-9.9-67.3-36.2-92.7s-57-34.5-92.7-36.2C293.5 32 154.5 32 122.3 33.8c-35.7 1.7-67.3 9.9-92.7 36.2S-5 127.5-6.7 163.2C-8.5 195.5-8.5 316.5-6.7 348.8c1.7 35.7 9.9 67.3 36.2 92.7s57 34.5 92.7 36.2c32.3 1.8 173.3 1.8 205.5 0 35.7-1.7 67.3-9.9 92.7-36.2s34.5-57 36.2-92.7c1.8-32.3 1.8-173.3 0-205.5zM398.8 388c-7.8 19.5-22.8 34.5-42.3 42.3-29.3 11.7-98.7 9-132.4 9s-103.1 2.6-132.4-9c-19.5-7.8-34.5-22.8-42.3-42.3-11.7-29.3-9-98.7-9-132.4s-2.6-103.1 9-132.4c7.8-19.5 22.8-34.5 42.3-42.3 29.3-11.7 98.7-9 132.4-9s103.1-2.6 132.4 9c19.5 7.8 34.5 22.8 42.3 42.3 11.7 29.3 9 98.7 9 132.4s2.6 103.1-9 132.4z\"/></svg>\n    </a>\n\n    <!-- X -->\n    <a href=\"https://twitter.com/share?url={{ shop.url }}{{ product.url }}\" target=\"_blank\" aria-label=\"X\" class=\"share-icon\">\n      <svg viewBox=\"0 0 1200 1227\"><path d=\"M714.6 548.7 1175 0H1070.8L668.5 488.3 349.6 0H0l479.8 708.7L0 1227h104.2l424.8-505.8L850.4 1227H1200L714.6 548.7Zm-149.8 178.4-49-70.4L134.5 90.3h151.3L599 528.6l49 70.5 409.7 587.6H1007L564.8 727.1Z\"/></svg>\n    </a>\n\n    <!-- Pinterest -->\n    <a href=\"https://pinterest.com/pin/create/button/?url={{ shop.url }}{{ product.url }}\" target=\"_blank\" aria-label=\"Pinterest\" class=\"share-icon\">\n      <svg viewBox=\"0 0 24 24\"><path d=\"M12 2C6.48 2 2 6.43 2 11.92c0 3.94 2.47 7.31 5.96 8.58-.08-.73-.15-1.85.03-2.65.17-.72 1.11-4.67 1.11-4.67s-.28-.57-.28-1.4c0-1.3.75-2.27 1.69-2.27.8 0 1.19.6 1.19 1.31 0 .8-.51 2-0.76 3.12-.21.89.45 1.63 1.31 1.63 1.57 0 2.77-1.65 2.77-4.03 0-2.1-1.52-3.57-3.67-3.57-2.5 0-3.96 1.87-3.96 3.82 0 .75.28 1.56.63 2 .07.09.08.18.05.27-.06.29-.21.91-.24 1.04-.03.15-.13.19-.3.11-1.12-.52-1.8-2.14-1.8-3.45 0-2.82 2.06-5.42 5.93-5.42 3.11 0 5.54 2.23 5.54 5.2 0 3.1-1.96 5.61-4.66 5.61-.91 0-1.77-.48-2.07-1.05l-.57 2.18c-.2.77-.74 1.73-1.1 2.31.84.25 1.74.39 2.66.39 5.52 0 10-4.43 10-9.92S17.52 2 12 2z\"/></svg>\n    </a>\n\n  </div>\n</div>",
             "pt": 3,
             "pb": 3
           }
@@ -215,8 +202,8 @@
         "08894b72-c532-44db-9228-5f14c9841895",
         "11016cfc-fdff-46f2-9b6b-26a6e68b7653",
         "9ecd1e68-8c4b-4330-ac14-7459a1896521",
-        "0f571c64-329e-4ea3-9c76-ebf86266226a",
         "separator_cWJNG3",
+        "liquid_LGnHfj",
         "liquid_iDU3Rg"
       ],
       "settings": {
