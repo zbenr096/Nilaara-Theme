@@ -15,14 +15,14 @@
         "8abeac2d-7b60-4697-891c-4d6201789d31": {
           "type": "media_gallery",
           "settings": {
-            "img_orientation": "ratio-1x1",
-            "img_border": "img-thumbnail",
+            "img_orientation": "ratio-3x4",
+            "img_border": "rounded",
             "effect": "slide",
             "speed": 300,
-            "controls_color": "body-color",
+            "controls_color": "white",
             "pagination_type": "bullets",
             "scrollbar": true,
-            "show_thumbs": "show",
+            "show_thumbs": "hide",
             "thumbs_per_view": 5,
             "full_screen": true,
             "full_screen_effect": "slide"
@@ -211,7 +211,7 @@
         "bg_opacity": 100,
         "bg_gradient": "",
         "bg_left_right_gradients": true,
-        "text_color": "text-body",
+        "text_color": "text-secondary",
         "border_top_width": 0,
         "border_bottom_width": 0,
         "border_color": "border-body",
