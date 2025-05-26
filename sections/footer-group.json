@@ -25,7 +25,7 @@
         "79b0b9d4-1bf4-4490-a48e-94be1aecf12a": {
           "type": "menu",
           "settings": {
-            "menu": "",
+            "menu": "main-menu",
             "title_font_size": "fs-xl",
             "title": "Quick Links"
           }
